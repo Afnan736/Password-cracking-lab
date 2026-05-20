@@ -1,0 +1,75 @@
+==== MD5 BEFORE CRACKING ===
+0 password hashes cracked, 20 left
+=== MD5 CRACKING RESULTS ===
+Loaded 20 password hashes with no different salts (Raw-MD5 [MD5 256/256 AVX2 8x3])
+Remaining 7 password hashes with no different salts
+=== MD5 RESULTS ===
+alice:password123
+charlie:qwerty
+diana:iloveyou
+edward:P@ssw0rd
+fatima:123456
+hannah:letmein
+ibrahim:Monday1!
+karen:abc123
+liam:Welcome1
+maria:sunshine
+olivia:monkey
+queen:football
+sam:pass
+
+13 password hashes cracked, 7 left
+=== SHA256 BEFORE CRACKING ===
+0 password hashes cracked, 20 left
+=== SHA256 CRACKING RESULTS ===
+Loaded 20 password hashes with no different salts (Raw-SHA256 [SHA256 256/256 AVX2 8x])
+123456           (fatima)     
+iloveyou         (diana)     
+abc123           (karen)     
+monkey           (olivia)     
+qwerty           (charlie)     
+sunshine         (maria)     
+football         (queen)     
+letmein          (hannah)     
+password123      (alice)     
+P@ssw0rd         (edward)     
+pass             (sam)     
+Welcome1         (liam)
+Monday1!         (ibrahim)     
+=== SHA256 RESULTS ===
+alice:password123
+charlie:qwerty
+diana:iloveyou
+edward:P@ssw0rd
+fatima:123456
+hannah:letmein
+ibrahim:Monday1!
+karen:abc123
+liam:Welcome1
+maria:sunshine
+olivia:monkey
+queen:football
+sam:pass
+
+13 password hashes cracked, 7 left
+=== BCRYPT BEFORE CRACKING ===
+0 password hashes cracked, 0 left
+=== BCRYPT CRACKING RESULTS ===
+Loaded 20 password hashes with 20 different salts (bcrypt [Blowfish 32/64 X3])
+Remaining 10 password hashes with 10 different salts
+Cost 1 (iteration count) is 4096 for all loaded hashes
+=== BCRYPT RESULTS ===
+alice:password123
+charlie:qwerty
+diana:iloveyou
+edward:P@ssw0rd
+fatima:123456
+hannah:letmein
+karen:abc123
+maria:sunshine
+olivia:monkey
+queen:football
+
+10 password hashes cracked, 10 left
+bcrypt cracking abandoned after 6 minutes - 10 passwords cracked
+This demonstrates bcrypt resistance compared to MD5 and SHA256 which cracked in seconds
