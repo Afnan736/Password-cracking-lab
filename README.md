@@ -1,6 +1,6 @@
 # Password-cracking-lab
 A hands-on lab simulating a corporate data breach. Generated MD5, SHA256, and bcrypt password hashes for 20 fictional users, cracked them using Hashcat and John the Ripper with the rockyou wordlist, and analysed the results from a purple team perspective including defensive recommendations on password storage, policies, and detection
-## Purple Team Analysis – JTR and Hashcat
+## Purple Team Analysis - JTR and Hashcat
 
 ## Overview
 A simulated company data breach scenario where 20 user password hashes 
@@ -10,11 +10,11 @@ hashing algorithms and poor password choices.
 ---
 
 ## Tools Used
-- Python 3 (hashlib, bcrypt) — hash generation
-- John the Ripper (JTR) — dictionary cracking
-- Hashcat — GPU-accelerated cracking
-- rockyou.txt — wordlist
-- Kali Linux — attack environment
+- Python 3 (hashlib, bcrypt) - hash generation
+- John the Ripper (JTR) - dictionary cracking
+- Hashcat - GPU-accelerated cracking
+- rockyou.txt - wordlist
+- Kali Linux - attack environment
 
 ---
 
@@ -29,11 +29,11 @@ and the real defensive impact of each algorithm.
 
 ```bash
 Password-cracking-lab/
-├── hashgen.py                 # Generates password hashes
+├── gen_hash.py                 # Generates password hashes
 ├── hashes_md5.txt             # MD5 hash dataset
 ├── hashes_sha256.txt          # SHA256 hash dataset
 ├── hashes_bcrypt.txt          # bcrypt hash dataset
-├── results/
+├── result/
 │   ├── jtr_results.txt        # John the Ripper cracking results
 │   └── hashcat_results.txt    # Hashcat cracking results
 ├── screenshots/               # Terminal screenshots and evidence
@@ -110,7 +110,7 @@ bcrypt is intentionally slow, automatically salted, and supports
 configurable work factors. Estimated full crack time: 63–72 days.
 
 Real attackers abandoned bcrypt because the ROI was too low.
-That is the goal — economically painful security, not impossible security.
+That is the goal economically painful security, not impossible security.
 
 ---
 
